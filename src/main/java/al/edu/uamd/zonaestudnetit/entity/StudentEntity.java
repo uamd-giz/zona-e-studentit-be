@@ -3,6 +3,7 @@ package al.edu.uamd.zonaestudnetit.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "studenti")
 @NamedQueries({@NamedQuery(name = "StudentEntity.getAll", query = "Select s from StudentEntity s")})
 public class StudentEntity {
 
