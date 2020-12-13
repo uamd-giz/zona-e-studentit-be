@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +17,7 @@ public class StudentiService {
     @PersistenceContext
     EntityManager entityManager;
 
+    @Transactional
     public void ruajTeDhenatEStudentit(Student studenti){
         StudentEntity se = new StudentEntity();
         se.setFirstName(studenti.getLastName());
