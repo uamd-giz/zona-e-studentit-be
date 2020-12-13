@@ -30,9 +30,10 @@ public class StudentiController {
     @GetMapping(value = "/studentet" )
     public ResponseEntity<List<Student>> ngarkoStudentet(){
         try {
-
+            logger.info("Thirrje per ngarkimin e te dhenave te studenteve!");
             return new ResponseEntity<>(ss.ngarkoStudentet(), HttpStatus.ACCEPTED);
         } catch (Exception e) {
+            logger.error("Ngarkimi i studenteve nuk u realizua!", e);
             return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
