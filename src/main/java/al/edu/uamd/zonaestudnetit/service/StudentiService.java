@@ -23,7 +23,7 @@ public class StudentiService {
         se.setFirstName(studenti.getLastName());
         se.setLastName(studenti.getLastName());
         se.setTest("Testi i pare");
-        entityManager.persist(studenti);
+        entityManager.persist(se);
     }
 
     public List<Student> ngarkoStudentet(){
