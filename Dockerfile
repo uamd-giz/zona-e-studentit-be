@@ -12,4 +12,4 @@ COPY . /opt
 
 RUN mvn clean install
 
-ENTRYPOINT ["java","-jar", "/opt/target/agro-fasada-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar", "/opt/target/zona-e-studentit-0.0.1-SNAPSHOT.jar"]
