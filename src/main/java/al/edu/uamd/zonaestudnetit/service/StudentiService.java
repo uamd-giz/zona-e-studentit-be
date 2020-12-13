@@ -20,9 +20,9 @@ public class StudentiService {
     @Transactional
     public void ruajTeDhenatEStudentit(Student studenti){
         StudentEntity se = new StudentEntity();
-        se.setFirstName(studenti.getLastName());
+        se.setFirstName(studenti.getFirstName());
         se.setLastName(studenti.getLastName());
-        se.setTest("Testi i pare");
+        se.setTest("Testi i dyte");
         entityManager.persist(se);
     }
 
