@@ -1,11 +1,9 @@
 package al.edu.uamd.zonaestudnetit.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@NamedQueries({@NamedQuery(name = "StudentEntity.getAll", query = "Select s Student s")})
 public class StudentEntity {
 
     @Id

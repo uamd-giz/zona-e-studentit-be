@@ -26,7 +26,7 @@ public class StudentiService {
 
     public List<Student> ngarkoStudentet(){
         List<StudentEntity> studentet =
-                entityManager.createNamedQuery("Student.getAll", StudentEntity.class).getResultList();
+                entityManager.createNamedQuery("StudentEntity.getAll", StudentEntity.class).getResultList();
         List result = new ArrayList();
         for(StudentEntity student : studentet){
             Student studentResult = new Student();

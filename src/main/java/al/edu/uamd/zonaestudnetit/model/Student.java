@@ -4,7 +4,6 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import java.time.LocalDate;
 
-@NamedQueries({@NamedQuery(name = "Student.getAll", query = "Select s Student s")})
 public class Student {
 
     private String firstName;
